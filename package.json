@@ -2,7 +2,6 @@
   "name": "eatgood---the-food-delivery-app",
   "version": "1.0.0",
   "description": "This is my Food Delivery App",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -18,5 +17,9 @@
   "homepage": "https://github.com/ankitjha2307/EatGood#readme",
   "devDependencies": {
     "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
