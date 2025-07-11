@@ -1,0 +1,22 @@
+{
+  "name": "eatgood---the-food-delivery-app",
+  "version": "1.0.0",
+  "description": "This is my Food Delivery App",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitjha2307/EatGood.git"
+  },
+  "author": "Ankit Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankitjha2307/EatGood/issues"
+  },
+  "homepage": "https://github.com/ankitjha2307/EatGood#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
