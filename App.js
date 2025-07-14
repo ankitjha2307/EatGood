@@ -8,7 +8,7 @@ const heading = React.createElement(
   "Ankit Jha"
 );
 
-// kuch nhi kra aaj to Chchchchchchchc
+// kuch nhi kra aaj to
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
