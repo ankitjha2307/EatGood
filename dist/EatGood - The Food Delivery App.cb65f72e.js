@@ -699,7 +699,11 @@ const Heading = ()=>{
 };
 _c = Heading;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 11,
+    columnNumber: 13
+}, undefined));
 var _c;
 $RefreshReg$(_c, "Heading");
 
