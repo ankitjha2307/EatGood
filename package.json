@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is my Food Delivery App",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel bulid index.html",
     "test": "jest"
   },
   "repository": {
