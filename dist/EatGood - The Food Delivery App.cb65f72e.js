@@ -688,8 +688,20 @@ const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     lineNumber: 4,
     columnNumber: 20
 }, undefined);
+const Heading = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: " Namste react Functional component "
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 7,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Heading;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(jsxHeading);
+var _c;
+$RefreshReg$(_c, "Heading");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
