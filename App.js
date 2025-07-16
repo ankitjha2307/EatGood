@@ -42,6 +42,21 @@ const Body = () => {
       <div className="search">Search</div>
       <div className="resContainer">
         <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
+        <ResturenCard />
       </div>
     </div>
   );

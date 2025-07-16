@@ -31,6 +31,7 @@
   background-color: #f0f0f0;
   width: 200px;
   height: 300px;
+  margin: 2px;
   padding: 5px;
 }
 
@@ -42,5 +43,10 @@
 .red-img {
   width: 100%;
   height: 55%;
+}
+
+.resContainer {
+  flex-wrap: wrap;
+  display: flex;
 }
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */
