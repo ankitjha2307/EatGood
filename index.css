@@ -1,3 +1,5 @@
+/* Header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -21,4 +23,16 @@
 .nav-item > ul > li {
   padding: 10px;
   margin: 10px;
+}
+
+.search {
+  padding: 10px;
+}
+
+/* Resturent Card */
+
+.res-card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
 }

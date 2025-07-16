@@ -22,10 +22,30 @@ const Header = () => {
   );
 };
 
+const ResturenCard = () => {
+  return (
+    <div className="res-card">
+      <h3> Burger King </h3>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="resContainer">
+        <ResturenCard />
+      </div>
+    </div>
+  );
+};
+
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
+      <Body />
     </div>
   );
 };
