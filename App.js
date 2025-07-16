@@ -25,7 +25,13 @@ const Header = () => {
 const ResturenCard = () => {
   return (
     <div className="res-card">
+      <img
+        className="red-img"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/7a2aca35-9ddb-4c31-a82e-6d3c9c665f43_10208.jpg"
+      />
       <h3> Burger King </h3>
+      <h4>Burger, Fries, coke</h4>
+      <h4> 4.4 Stars</h4>
     </div>
   );
 };
