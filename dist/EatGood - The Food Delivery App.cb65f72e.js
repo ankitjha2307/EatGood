@@ -743,7 +743,8 @@ const Header = ()=>{
     }, undefined);
 };
 _c = Header;
-const ResturenCard = ()=>{
+const ResturentCard = (props)=>{
+    const { resData } = props;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-card",
         children: [
@@ -752,38 +753,114 @@ const ResturenCard = ()=>{
                 src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/7a2aca35-9ddb-4c31-a82e-6d3c9c665f43_10208.jpg"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 28,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: " Burger King "
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 32,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "Burger, Fries, coke"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 33,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: " 4.4 Stars"
-            }, void 0, false, {
+                children: [
+                    " ",
+                    resData.info.name,
+                    " "
+                ]
+            }, void 0, true, {
                 fileName: "App.js",
                 lineNumber: 34,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: resData.info.cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: [
+                    " ",
+                    resData.info.avgRating
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 5
     }, undefined);
 };
-_c1 = ResturenCard;
+_c1 = ResturentCard;
+const resObj = {
+    info: {
+        id: "831065",
+        name: "Chinese Wok",
+        cloudinaryImageId: "f996b31033fd07603bfb28cb4e526683",
+        locality: "Chandni Chowk",
+        areaName: "Omaxe mall",
+        costForTwo: "\u20B9250 for two",
+        cuisines: [
+            "Chinese",
+            "Asian",
+            "Tibetan",
+            "Desserts"
+        ],
+        avgRating: 4,
+        parentId: "61955",
+        avgRatingString: "4.0",
+        totalRatingsString: "384",
+        sla: {
+            deliveryTime: 38,
+            lastMileTravel: 1.4,
+            serviceability: "SERVICEABLE",
+            slaString: "35-40 mins",
+            lastMileTravelString: "1.4 km",
+            iconType: "ICON_TYPE_EMPTY"
+        },
+        availability: {
+            nextCloseTime: "2025-07-16 23:00:00",
+            opened: true
+        },
+        badges: {},
+        isOpen: true,
+        type: "F",
+        badgesV2: {
+            entityBadges: {
+                imageBased: {},
+                textBased: {},
+                textExtendedBadges: {}
+            }
+        },
+        aggregatedDiscountInfoV3: {
+            header: "ITEMS",
+            subHeader: "AT \u20B9129"
+        },
+        differentiatedUi: {
+            displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            differentiatedUiMediaDetails: {
+                lottie: {},
+                video: {}
+            }
+        },
+        reviewsSummary: {},
+        displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        restaurantOfferPresentationInfo: {},
+        externalRatings: {
+            aggregatedRating: {
+                rating: "--"
+            }
+        },
+        ratingsDisplayPreference: "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    analytics: {
+        context: "seo-data-453f6e3f-4095-4fd6-aa81-2acff75ad685"
+    },
+    cta: {
+        link: "https://www.swiggy.com/city/delhi/chinese-wok-chandni-chowk-omaxe-mall-rest831065",
+        type: "WEBLINK"
+    }
+};
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -793,102 +870,27 @@ const Body = ()=>{
                 children: "Search"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 42,
+                lineNumber: 109,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "resContainer",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 44,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 45,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 46,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 47,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 48,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 50,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 51,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 52,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 53,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 55,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 56,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 57,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 58,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturenCard, {}, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 59,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturentCard, {
+                    resData: resObj
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 111,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 43,
+                lineNumber: 110,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 41,
+        lineNumber: 108,
         columnNumber: 5
     }, undefined);
 };
@@ -899,18 +901,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 68,
+                lineNumber: 120,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 69,
+                lineNumber: 121,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 67,
+        lineNumber: 119,
         columnNumber: 5
     }, undefined);
 };
@@ -918,12 +920,12 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 75,
+    lineNumber: 127,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
 $RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "ResturenCard");
+$RefreshReg$(_c1, "ResturentCard");
 $RefreshReg$(_c2, "Body");
 $RefreshReg$(_c3, "AppLayout");
 
