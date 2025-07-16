@@ -29,8 +29,7 @@
 
 .res-card {
   background-color: #f0f0f0;
-  width: 200px;
-  height: 300px;
+  width: 250px;
   margin: 2px;
   padding: 5px;
 }
@@ -47,6 +46,7 @@
 
 .resContainer {
   flex-wrap: wrap;
+  justify-content: space-evenly;
   display: flex;
 }
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */
