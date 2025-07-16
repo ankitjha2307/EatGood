@@ -1194,7 +1194,7 @@ const Body = () => {
       <div className="search">Search</div>
       <div className="resContainer">
         {resList.map((resturent) => (
-          <ResturentCard resData={resturent} />
+          <ResturentCard key={resturent.info.id} resData={resturent} />
         ))}
       </div>
     </div>

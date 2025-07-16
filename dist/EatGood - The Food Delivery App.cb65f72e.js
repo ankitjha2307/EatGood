@@ -1995,7 +1995,7 @@ const Body = ()=>{
                 className: "resContainer",
                 children: resList.map((resturent)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturentCard, {
                         resData: resturent
-                    }, void 0, false, {
+                    }, resturent.info.id, false, {
                         fileName: "App.js",
                         lineNumber: 1197,
                         columnNumber: 11
