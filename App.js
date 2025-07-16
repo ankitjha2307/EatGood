@@ -1,11 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const jsxHeading = <h1 id="heading">Ankit Jha by Jsx</h1>;
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRESsGm92deQDTJR9fiWcHZ8S94NCmFLSkkQg&s"
+        />
+      </div>
 
-const Heading = () => {
-  return <h1> Namste react Functional component </h1>;
+      <div className="nav-item">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Header />
+    </div>
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Heading />);
+root.render(<AppLayout />);
