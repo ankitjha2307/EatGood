@@ -82,4 +82,10 @@
     background-position: 800px 0;
   }
 }
+
+.login {
+  cursor: pointer;
+  background-color: #ec920a;
+  margin: 5px;
+}
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */

@@ -21,11 +21,9 @@ const Body = () => {
     );
   };
 
-  if (listOfResturant == 0) {
-    return <Shimmer />;
-  }
-
-  return (
+  return listOfResturant.length == 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
