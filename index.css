@@ -94,7 +94,17 @@
 }
 
 .login {
+  border-radius: 999px;
   margin: 5px;
   cursor: pointer;
-  background-color: rgb(236, 146, 10);
+  background-color: rgb(255, 174, 53);
+}
+
+.filter {
+  margin: 10px;
+  display: flex;
+}
+
+.search-btn {
+  margin: 15px;
 }

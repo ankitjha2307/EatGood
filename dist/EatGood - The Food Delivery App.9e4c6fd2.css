@@ -85,7 +85,17 @@
 
 .login {
   cursor: pointer;
-  background-color: #ec920a;
+  background-color: #ffae35;
+  border-radius: 999px;
   margin: 5px;
+}
+
+.filter {
+  margin: 10px;
+  display: flex;
+}
+
+.search-btn {
+  margin: 15px;
 }
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */

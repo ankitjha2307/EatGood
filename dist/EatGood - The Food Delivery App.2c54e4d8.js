@@ -27334,7 +27334,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: "login",
                             onClick: ()=>{
-                                SetLoginButton("Logout");
+                                loginButton == "Login" ? SetLoginButton("Logout") : SetLoginButton("Login");
                             },
                             children: loginButton
                         }, void 0, false, {
@@ -27418,23 +27418,49 @@ const Body = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "filter",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "top-rated-btn",
-                    onClick: ()=>{
-                        const filterList = listOfResturant.filter((res)=>res.info.avgRating > 4.4);
-                        setListOfResturant(filterList);
-                    },
-                    children: [
-                        " ",
-                        "Top Rated Restursnt",
-                        " "
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Component/Body.js",
-                    lineNumber: 29,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "search-btn",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                className: "search-box"
+                            }, void 0, false, {
+                                fileName: "src/Component/Body.js",
+                                lineNumber: 30,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                children: "Search"
+                            }, void 0, false, {
+                                fileName: "src/Component/Body.js",
+                                lineNumber: 31,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/Body.js",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "top-rated-btn",
+                        onClick: ()=>{
+                            const filterList = listOfResturant.filter((res)=>res.info.avgRating > 4.4);
+                            setListOfResturant(filterList);
+                        },
+                        children: [
+                            " ",
+                            "Top Rated Restursnt",
+                            " "
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Component/Body.js",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/Component/Body.js",
                 lineNumber: 28,
                 columnNumber: 7
@@ -27445,12 +27471,12 @@ const Body = ()=>{
                         resData: resturent
                     }, resturent.info.id, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 44,
+                        lineNumber: 48,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 42,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined)
         ]
