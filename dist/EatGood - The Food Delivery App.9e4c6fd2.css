@@ -49,4 +49,9 @@
   justify-content: space-evenly;
   display: flex;
 }
+
+.top-rated-btn {
+  cursor: pointer;
+  margin: 5px;
+}
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */
