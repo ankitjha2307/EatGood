@@ -97,4 +97,105 @@
 .search-btn {
   margin: 15px;
 }
+
+.about-container {
+  color: #333;
+  background-color: #fffefc;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.about-container h1 {
+  color: #e0a134;
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+}
+
+.about-container h2 {
+  color: #333;
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+
+.about-container p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-container ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.about-container li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  color: #333;
+  background-color: #fffefc;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.contact-container h1 {
+  color: #ff7818;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.contact-container h2 {
+  color: #333;
+  margin-top: 30px;
+  font-size: 1.8rem;
+}
+
+.contact-container p {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-details {
+  margin-top: 15px;
+}
+
+.contact-form {
+  flex-direction: column;
+  margin-top: 20px;
+  display: flex;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #e0a134;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1.1rem;
+  transition: background-color .3s;
+}
+
+.contact-form button:hover {
+  background-color: #e0a134;
+}
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */
