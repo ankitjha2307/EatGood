@@ -35,9 +35,7 @@ const ResturantMenu = () => {
       <p>
         {cuisines.join(", ")} - {costForTwoMessage}
       </p>
-      {/* <p>
-        {avgRating} - 
-      </p> */}
+
       <h2> Menu</h2>
 
       <ul>
