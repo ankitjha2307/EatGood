@@ -160,11 +160,11 @@
       });
     }
   }
-})({"1qIdD":[function(require,module,exports,__globalThis) {
+})({"jBum2":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 64695;
+var HMR_SERVER_PORT = 56208;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -27401,6 +27401,7 @@ var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     const [listOfResturant, setListOfResturant] = (0, _react.useState)([]);
+    const [searchText, setSearchtext] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -27411,7 +27412,7 @@ const Body = ()=>{
     };
     return listOfResturant.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmirDefault.default), {}, void 0, false, {
         fileName: "src/Component/Body.js",
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -27424,23 +27425,31 @@ const Body = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "text",
-                                className: "search-box"
-                            }, void 0, false, {
-                                fileName: "src/Component/Body.js",
-                                lineNumber: 30,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                children: "Search"
+                                className: "search-box",
+                                value: searchText,
+                                onChange: (e)=>{
+                                    setSearchtext(e.target.value);
+                                }
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
                                 lineNumber: 31,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>{
+                                    const filterResturent = listOfResturant.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                                    setListOfResturant(filterResturent);
+                                },
+                                children: "Search"
+                            }, void 0, false, {
+                                fileName: "src/Component/Body.js",
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 29,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27456,13 +27465,13 @@ const Body = ()=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 33,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27471,22 +27480,22 @@ const Body = ()=>{
                         resData: resturent
                     }, resturent.info.id, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 48,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 46,
+                lineNumber: 63,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Component/Body.js",
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 5
     }, undefined);
 };
-_s(Body, "6OQwjN86UAGs0vCr0p36bvP6H3w=");
+_s(Body, "OtifiKGYy9dMfMcJ/TPsTbdmk10=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -28931,6 +28940,6 @@ $RefreshReg$(_c, "Shimmer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["1qIdD","hh6uc"], "hh6uc", "parcelRequire56c8", {}, null, null, "http://localhost:64695")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["jBum2","hh6uc"], "hh6uc", "parcelRequire56c8", {}, null, null, "http://localhost:56208")
 
 //# sourceMappingURL=EatGood - The Food Delivery App.2c54e4d8.js.map
