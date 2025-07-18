@@ -2,6 +2,7 @@ import ResturentCard from "./ResturentCard";
 import { useEffect, useState } from "react";
 import resList from "../utils/mockData";
 import Shimmer from "./Shimmir";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [listOfResturant, setListOfResturant] = useState([]);
@@ -62,7 +63,10 @@ const Body = () => {
       </div>
       <div className="resContainer">
         {listOfResturant.map((resturent) => (
-          <ResturentCard key={resturent.info.id} resData={resturent} />
+          <Link key={resturent.info.id} to={"/resturant/" + resturent.info.id}>
+            {" "}
+            <ResturentCard resData={resturent} />{" "}
+          </Link>
         ))}
       </div>
     </div>
