@@ -685,42 +685,43 @@ var _headerDefault = parcelHelpers.interopDefault(_header);
 var _body = require("./Component/Body");
 var _bodyDefault = parcelHelpers.interopDefault(_body);
 var _reactRouterDom = require("react-router-dom");
-var _about = require("./Component/About");
-var _aboutDefault = parcelHelpers.interopDefault(_about);
+// import About from "./Component/About";
 var _contactUs = require("./Component/ContactUs");
 var _contactUsDefault = parcelHelpers.interopDefault(_contactUs);
 var _error = require("./Component/Error");
 var _errorDefault = parcelHelpers.interopDefault(_error);
 var _resturantMenu = require("./Component/REsturantMenu");
 var _resturantMenuDefault = parcelHelpers.interopDefault(_resturantMenu);
+const About = /*#__PURE__*/ (0, _react.lazy)(()=>require("f7924daaeb77a5b5"));
+_c = About;
 const AppLayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.js",
-        lineNumber: 13,
+        lineNumber: 15,
         columnNumber: 5
     }, undefined);
 };
-_c = AppLayout;
+_c1 = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 23,
+            lineNumber: 25,
             columnNumber: 14
         }, undefined),
         children: [
@@ -728,23 +729,29 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 25,
+                    lineNumber: 27,
                     columnNumber: 29
                 }, undefined)
             },
             {
                 path: "/about",
-                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
+                element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(About, {}, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 32,
+                        columnNumber: 13
+                    }, undefined)
+                }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 26,
-                    columnNumber: 34
+                    lineNumber: 31,
+                    columnNumber: 11
                 }, undefined)
             },
             {
                 path: "/contact",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _contactUsDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 27,
+                    lineNumber: 36,
                     columnNumber: 36
                 }, undefined)
             },
@@ -752,14 +759,14 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/resturant/:resId",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturantMenuDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 28,
+                    lineNumber: 37,
                     columnNumber: 45
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 31,
+            lineNumber: 40,
             columnNumber: 19
         }, undefined)
     }
@@ -769,18 +776,19 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 36,
+    lineNumber: 45,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "AppLayout");
+var _c, _c1;
+$RefreshReg$(_c, "About");
+$RefreshReg$(_c1, "AppLayout");
 
   $parcel$ReactRefreshHelpers$4089.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Component/Header":"hbm1Z","./Component/Body":"7xVj3","react-router-dom":"61z4w","./Component/About":"eeBUX","./Component/ContactUs":"dup3p","./Component/Error":"f447a","./Component/REsturantMenu":"2mgnB"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Component/Header":"hbm1Z","./Component/Body":"7xVj3","react-router-dom":"61z4w","./Component/ContactUs":"dup3p","./Component/Error":"f447a","./Component/REsturantMenu":"2mgnB","f7924daaeb77a5b5":"6IZZX"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -35729,119 +35737,6 @@ $RefreshReg$(_c, "Shimmer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"eeBUX":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$60ed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$60ed.init();
-var prevRefreshReg = globalThis.$RefreshReg$;
-var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$60ed.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const About = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "about-container",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "About EatGood"
-            }, void 0, false, {
-                fileName: "src/Component/About.js",
-                lineNumber: 4,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: [
-                    "Welcome to ",
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("strong", {
-                        children: "EatGood"
-                    }, void 0, false, {
-                        fileName: "src/Component/About.js",
-                        lineNumber: 6,
-                        columnNumber: 20
-                    }, undefined),
-                    " \u2013 your go-to food delivery app! \uD83C\uDF54\uD83C\uDF55\uD83E\uDD57"
-                ]
-            }, void 0, true, {
-                fileName: "src/Component/About.js",
-                lineNumber: 5,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "We connect hungry people with the best local restaurants. Whether you're craving a late-night burger or a healthy salad, we've got you covered!"
-            }, void 0, false, {
-                fileName: "src/Component/About.js",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Why Choose Us?"
-            }, void 0, false, {
-                fileName: "src/Component/About.js",
-                lineNumber: 13,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "Fast & reliable delivery \uD83D\uDE80"
-                    }, void 0, false, {
-                        fileName: "src/Component/About.js",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "Wide variety of restaurants \uD83C\uDF7D\uFE0F"
-                    }, void 0, false, {
-                        fileName: "src/Component/About.js",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "Exclusive offers and discounts \uD83D\uDCB8"
-                    }, void 0, false, {
-                        fileName: "src/Component/About.js",
-                        lineNumber: 17,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                        children: "Real-time tracking \uD83D\uDCCD"
-                    }, void 0, false, {
-                        fileName: "src/Component/About.js",
-                        lineNumber: 18,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/Component/About.js",
-                lineNumber: 14,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "Made with \u2764\uFE0F by the EatGood team. Order now and enjoy delicious food at your doorstep!"
-            }, void 0, false, {
-                fileName: "src/Component/About.js",
-                lineNumber: 20,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/Component/About.js",
-        lineNumber: 3,
-        columnNumber: 5
-    }, undefined);
-};
-_c = About;
-exports.default = About;
-var _c;
-$RefreshReg$(_c, "About");
-
-  $parcel$ReactRefreshHelpers$60ed.postlude(module);
-} finally {
-  globalThis.$RefreshReg$ = prevRefreshReg;
-  globalThis.$RefreshSig$ = prevRefreshSig;
-}
 },{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dup3p":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$172e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$172e.init();
@@ -36174,6 +36069,9 @@ exports.default = useResturantMenu;
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"jMk1U","../utils/constant":"2QBK6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire56c8", {}, null, null, "http://localhost:1234")
+},{"react":"jMk1U","../utils/constant":"2QBK6","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"6IZZX":[function(require,module,exports,__globalThis) {
+module.exports = import("./About.fd774e8b.js").then(()=>module.bundle.root('eeBUX'));
+
+},{"eeBUX":"eeBUX"}]},["frqA7","hh6uc"], "hh6uc", "parcelRequire56c8", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=EatGood - The Food Delivery App.2c54e4d8.js.map
