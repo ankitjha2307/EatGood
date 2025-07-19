@@ -1,4 +1,4 @@
-import ResturentCard from "./ResturentCard";
+import ResturentCard, { withPromotedLabel } from "./ResturentCard";
 import { useEffect, useState } from "react";
 import resList from "../utils/mockData";
 import Shimmer from "./Shimmir";
@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 const Body = () => {
   const [listOfResturant, setListOfResturant] = useState([]);
   const [searchText, setSearchtext] = useState("");
+
+  const ResturentCardPromoted = withPromotedLabel(ResturentCard);
 
   useEffect(() => {
     fetchData();
@@ -23,7 +25,7 @@ const Body = () => {
     );
   };
 
-  return listOfResturant.length == 0 ? (
+  return listOfResturant.length === 0 ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -48,6 +50,7 @@ const Body = () => {
             Search
           </button>
         </div>
+
         <button
           className="top-rated-btn"
           onClick={() => {
@@ -57,15 +60,18 @@ const Body = () => {
             setListOfResturant(filterList);
           }}
         >
-          {" "}
-          Top Rated Restursnt{" "}
+          Top Rated Restaurant
         </button>
       </div>
+
       <div className="resContainer">
         {listOfResturant.map((resturent) => (
           <Link key={resturent.info.id} to={"/resturant/" + resturent.info.id}>
-            {" "}
-            <ResturentCard resData={resturent} />{" "}
+            {resturent.info.avgRating > 4.3 ? (
+              <ResturentCardPromoted resData={resturent} />
+            ) : (
+              <ResturentCard resData={resturent} />
+            )}
           </Link>
         ))}
       </div>

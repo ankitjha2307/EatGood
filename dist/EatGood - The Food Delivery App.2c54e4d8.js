@@ -34188,6 +34188,7 @@ const Body = ()=>{
     _s();
     const [listOfResturant, setListOfResturant] = (0, _react.useState)([]);
     const [searchText, setSearchtext] = (0, _react.useState)("");
+    const ResturentCardPromoted = (0, _resturentCard.withPromotedLabel)((0, _resturentCardDefault.default));
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -34196,9 +34197,9 @@ const Body = ()=>{
         const json = await data.json();
         setListOfResturant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
-    return listOfResturant.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmirDefault.default), {}, void 0, false, {
+    return listOfResturant.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmirDefault.default), {}, void 0, false, {
         fileName: "src/Component/Body.js",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 5
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -34218,7 +34219,7 @@ const Body = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 32,
+                                lineNumber: 34,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34229,13 +34230,13 @@ const Body = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/Component/Body.js",
-                                lineNumber: 40,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 31,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34244,51 +34245,49 @@ const Body = ()=>{
                             const filterList = listOfResturant.filter((res)=>res.info.avgRating > 4.4);
                             setListOfResturant(filterList);
                         },
-                        children: [
-                            " ",
-                            "Top Rated Restursnt",
-                            " "
-                        ]
-                    }, void 0, true, {
+                        children: "Top Rated Restaurant"
+                    }, void 0, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 51,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 30,
+                lineNumber: 32,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "resContainer",
                 children: listOfResturant.map((resturent)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/resturant/" + resturent.info.id,
-                        children: [
-                            " ",
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturentCardDefault.default), {
-                                resData: resturent
-                            }, void 0, false, {
-                                fileName: "src/Component/Body.js",
-                                lineNumber: 68,
-                                columnNumber: 13
-                            }, undefined),
-                            " "
-                        ]
-                    }, resturent.info.id, true, {
+                        children: resturent.info.avgRating > 4.3 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturentCardPromoted, {
+                            resData: resturent
+                        }, void 0, false, {
+                            fileName: "src/Component/Body.js",
+                            lineNumber: 71,
+                            columnNumber: 15
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resturentCardDefault.default), {
+                            resData: resturent
+                        }, void 0, false, {
+                            fileName: "src/Component/Body.js",
+                            lineNumber: 73,
+                            columnNumber: 15
+                        }, undefined)
+                    }, resturent.info.id, false, {
                         fileName: "src/Component/Body.js",
-                        lineNumber: 66,
+                        lineNumber: 69,
                         columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/Component/Body.js",
-                lineNumber: 64,
+                lineNumber: 67,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Component/Body.js",
-        lineNumber: 29,
+        lineNumber: 31,
         columnNumber: 5
     }, undefined);
 };
@@ -34313,6 +34312,7 @@ $parcel$ReactRefreshHelpers$b491.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "withPromotedLabel", ()=>withPromotedLabel);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _constant = require("../utils/constant");
 const ResturentCard = (props)=>{
@@ -34372,6 +34372,34 @@ const ResturentCard = (props)=>{
     }, undefined);
 };
 _c = ResturentCard;
+const withPromotedLabel = (ResturentCard)=>{
+    return (props)=>{
+        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "relative-card",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    className: "promoted",
+                    children: " Promoted "
+                }, void 0, false, {
+                    fileName: "src/Component/ResturentCard.js",
+                    lineNumber: 24,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ResturentCard, {
+                    ...props
+                }, void 0, false, {
+                    fileName: "src/Component/ResturentCard.js",
+                    lineNumber: 25,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Component/ResturentCard.js",
+            lineNumber: 23,
+            columnNumber: 7
+        }, undefined);
+    };
+};
 exports.default = ResturentCard;
 var _c;
 $RefreshReg$(_c, "ResturentCard");
