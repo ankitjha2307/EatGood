@@ -1,12 +1,9 @@
 import { useState } from "react";
 import ItemList from "./ItemList";
 
-const ResCatrgory = ({ data }) => {
-  const [showItems, setShowItems] = useState(false);
-
+const ResCatrgory = ({ data, showItems, setShowIndex }) => {
   const handleClick = () => {
-    console.log("clicked");
-    setShowItems(!showItems);
+    setShowIndex();
   };
 
   return (

@@ -35983,14 +35983,16 @@ var _useResturnatMenu = require("../utils/useResturnatMenu");
 var _useResturnatMenuDefault = parcelHelpers.interopDefault(_useResturnatMenu);
 var _resCategory = require("./ResCategory");
 var _resCategoryDefault = parcelHelpers.interopDefault(_resCategory);
+var _react = require("react");
 var _s = $RefreshSig$();
 const ResturantMenu = ()=>{
     _s();
     const { resId } = (0, _reactRouterDom.useParams)();
     const resInfo = (0, _useResturnatMenuDefault.default)(resId);
+    const [showIndex, setShowIndex] = (0, _react.useState)(null);
     if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmirDefault.default), {}, void 0, false, {
         fileName: "src/Component/REsturantMenu.js",
-        lineNumber: 12,
+        lineNumber: 15,
         columnNumber: 32
     }, undefined);
     const { name, cuisines, avgRating, costForTwoMessage } = resInfo?.cards[2]?.card?.card?.info;
@@ -36004,7 +36006,7 @@ const ResturantMenu = ()=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/Component/REsturantMenu.js",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
@@ -36015,24 +36017,26 @@ const ResturantMenu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/Component/REsturantMenu.js",
-                lineNumber: 31,
+                lineNumber: 34,
                 columnNumber: 7
             }, undefined),
             categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _resCategoryDefault.default), {
-                    data: category.card.card
+                    data: category.card.card,
+                    showItems: index == showIndex ? true : false,
+                    setShowIndex: ()=>setShowIndex(index)
                 }, index, false, {
                     fileName: "src/Component/REsturantMenu.js",
-                    lineNumber: 36,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/Component/REsturantMenu.js",
-        lineNumber: 29,
+        lineNumber: 32,
         columnNumber: 5
     }, undefined);
 };
-_s(ResturantMenu, "zfE7XvX9JiskiXV3U6sAP47+8Is=", false, function() {
+_s(ResturantMenu, "2ESgxhPD+yYNucOlEP9RDQDn2EI=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useResturnatMenuDefault.default)
@@ -36048,7 +36052,7 @@ $RefreshReg$(_c, "ResturantMenu");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./Shimmir":"271AL","react-router-dom":"61z4w","../utils/constant":"2QBK6","../utils/useResturnatMenu":"cDxT2","./ResCategory":"hTFjV"}],"cDxT2":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./Shimmir":"271AL","react-router-dom":"61z4w","../utils/constant":"2QBK6","../utils/useResturnatMenu":"cDxT2","./ResCategory":"hTFjV","react":"jMk1U"}],"cDxT2":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$aa2a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$aa2a.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -36096,13 +36100,9 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _itemList = require("./ItemList");
 var _itemListDefault = parcelHelpers.interopDefault(_itemList);
-var _s = $RefreshSig$();
-const ResCatrgory = ({ data })=>{
-    _s();
-    const [showItems, setShowItems] = (0, _react.useState)(false);
+const ResCatrgory = ({ data, showItems, setShowIndex })=>{
     const handleClick = ()=>{
-        console.log("clicked");
-        setShowItems(!showItems);
+        setShowIndex();
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "accodio-header",
@@ -36121,35 +36121,34 @@ const ResCatrgory = ({ data })=>{
                             children: "\u2B07\uFE0F"
                         }, void 0, false, {
                             fileName: "src/Component/ResCategory.js",
-                            lineNumber: 16,
+                            lineNumber: 13,
                             columnNumber: 49
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/Component/ResCategory.js",
-                    lineNumber: 15,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, undefined),
                 showItems && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _itemListDefault.default), {
                     items: data.itemCards
                 }, void 0, false, {
                     fileName: "src/Component/ResCategory.js",
-                    lineNumber: 19,
+                    lineNumber: 16,
                     columnNumber: 23
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/Component/ResCategory.js",
-            lineNumber: 14,
+            lineNumber: 11,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/Component/ResCategory.js",
-        lineNumber: 13,
+        lineNumber: 10,
         columnNumber: 5
     }, undefined);
 };
-_s(ResCatrgory, "nufYacSoU4bbrMzdqcBBtNUNFgY=");
 _c = ResCatrgory;
 exports.default = ResCatrgory;
 var _c;
