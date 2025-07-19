@@ -149,7 +149,6 @@
   outline: none;
 }
 
-.search-btn button,
 .top-rated-btn {
   padding: 10px 20px;
   background-color: #ff7e00;
@@ -287,4 +286,55 @@
 
 .relative-card {
   position: relative;
+}
+
+.Menu {
+  text-align: center;
+}
+
+.accodion {
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.item-list {
+  border-bottom: 1px solid rgb(113, 110, 110);
+  text-align: left;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-list > p {
+  font-size: small;
+}
+
+.item-image {
+  width: 120px;
+}
+
+.Add-btn {
+  background-color: white;
+  position: absolute;
+  height: 20px;
+  padding: 2px;
 }
