@@ -55,7 +55,7 @@ const Body = () => {
           className="top-rated-btn"
           onClick={() => {
             const filterList = listOfResturant.filter(
-              (res) => res.info.avgRating > 4.4
+              (res) => res.info.avgRating > 4.2
             );
             setListOfResturant(filterList);
           }}

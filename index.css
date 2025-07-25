@@ -33,11 +33,11 @@
 
 .res-card {
   width: 250px;
-  padding: 16px;
+  /* padding: 16px; */
   margin: 16px;
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -118,27 +118,22 @@
 }
 
 .login {
-  border-radius: 999px;
-  width: 100px;
-  margin: 5px;
   cursor: pointer;
-  background-color: #e86f00;
-  color: white;
 }
 
 .filter {
-  display: flex;
+  padding: 10px;
+
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
 .search-btn {
-  display: flex;
+  /* display: flex; */
   gap: 0.5rem;
   justify-content: center;
-  width: 100%; /* Take full width to center in flex */
   margin-bottom: 1rem;
 }
 
@@ -160,7 +155,7 @@
 .top-rated-btn {
   padding: 8px 16px;
   font-size: 1rem;
-  background-color: #ff6f00;
+  background-color: #e63946;
   border: none;
   color: white;
   border-radius: 8px;
@@ -189,7 +184,7 @@
 .about-container h1 {
   font-size: 2.5rem;
   margin-bottom: 16px;
-  color: #e0a134;
+  color: #ff7818;
 }
 
 .about-container h2 {
@@ -345,4 +340,33 @@
   position: absolute;
   height: 20px;
   padding: 2px;
+}
+
+.text-link {
+  text-decoration: none;
+  color: black;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.cartItem {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartItemList {
+  width: 50%;
+  padding: 40px;
 }

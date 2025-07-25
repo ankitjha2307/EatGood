@@ -1,6 +1,14 @@
+import { useDispatch } from "react-redux";
+import { addItem } from "../utils/cartSlice";
 import { CDN_URL } from "../utils/constant";
 
 const ItemList = ({ items }) => {
+  const dispatch = useDispatch();
+
+  const handelCartItem = (item) => {
+    dispatch(addItem(item));
+  };
+
   return (
     <>
       <div className="head-accodion">
@@ -17,10 +25,14 @@ const ItemList = ({ items }) => {
               <p>{item.card.info.description}</p>
             </div>
 
-            <img
-              className="item-image"
-              src={CDN_URL + item.card.info.imageId}
-            />
+            <div className="item-container">
+              <img
+                className="item-image"
+                src={CDN_URL + item.card.info.imageId}
+              />
+
+              <button onClick={() => handelCartItem(item)}> + ADD </button>
+            </div>
           </div>
         ))}
       </div>

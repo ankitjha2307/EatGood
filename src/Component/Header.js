@@ -1,9 +1,16 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { LOGO_URL } from "../utils/constant";
 import { Link } from "react-router-dom";
+import UserContext from "../utils/useContaxt";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [loginButton, SetLoginButton] = useState("Login");
+
+  const { loggedInUser } = useContext(UserContext);
+  console.log(loggedInUser);
+
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="header">
@@ -14,15 +21,24 @@ const Header = () => {
       <div className="nav-item">
         <ul>
           <li>
-            <Link to="/"> Home </Link>
+            <Link to="/" className="text-link">
+              {" "}
+              Home{" "}
+            </Link>
           </li>
           <li>
-            <Link to="/about"> About us</Link>
+            <Link className="text-link" to="/about">
+              {" "}
+              About us
+            </Link>
           </li>
           <li>
-            <Link to="/contact"> Contact us </Link>
+            <Link className="text-link" to="/contact">
+              {" "}
+              Contact us{" "}
+            </Link>
           </li>
-          <button
+          <li
             className="login"
             onClick={() => {
               loginButton == "Login"
@@ -31,7 +47,13 @@ const Header = () => {
             }}
           >
             {loginButton}
-          </button>
+          </li>
+
+          <li className="cart">
+            <Link to="/Cart">Cart ({cartItems.length} items </Link>)
+          </li>
+
+          <li> {loggedInUser} </li>
         </ul>
       </div>
     </div>

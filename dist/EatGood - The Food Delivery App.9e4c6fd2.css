@@ -32,9 +32,8 @@
   border-radius: 16px;
   width: 250px;
   margin: 16px;
-  padding: 16px;
   transition: transform .2s ease-in-out;
-  box-shadow: 0 4px 10px #0000001a;
+  box-shadow: 0 4px 10px #0000004d;
 }
 
 .res-card:hover {
@@ -107,27 +106,19 @@
 
 .login {
   cursor: pointer;
-  color: #fff;
-  background-color: #e86f00;
-  border-radius: 999px;
-  width: 100px;
-  margin: 5px;
 }
 
 .filter {
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 2rem;
-  display: flex;
+  padding: 10px;
 }
 
 .search-btn {
   justify-content: center;
   gap: .5rem;
-  width: 100%;
   margin-bottom: 1rem;
-  display: flex;
 }
 
 .search-box {
@@ -147,7 +138,7 @@
 .search-btn button, .top-rated-btn {
   color: #fff;
   cursor: pointer;
-  background-color: #ff6f00;
+  background-color: #e63946;
   border: none;
   border-radius: 8px;
   padding: 8px 16px;
@@ -171,7 +162,7 @@
 }
 
 .about-container h1 {
-  color: #e0a134;
+  color: #ff7818;
   margin-bottom: 16px;
   font-size: 2.5rem;
 }
@@ -323,5 +314,34 @@
   height: 20px;
   padding: 2px;
   position: absolute;
+}
+
+.text-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.item-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.cart {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cartItem {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+}
+
+.cartItemList {
+  width: 50%;
+  padding: 40px;
 }
 /*# sourceMappingURL=EatGood - The Food Delivery App.9e4c6fd2.css.map */
